@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: #111;
+}
+
+/* =========================
+   MENU
+========================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+nav h2 {
+    margin: 0 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+/* =========================
+   NOUVEL ACCUEIL
+========================= */
+
+.home-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7)),
+        url("images/jeu.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-content {
+    padding: 40px 20px;
+}
+
+.welcome {
+    font-size: 18px;
+    letter-spacing: 6px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.home-content h1 {
+    font-size: 75px;
+    line-height: 0.95;
+    margin: 0;
+
+    text-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+}
+
+.subtitle {
+    font-size: 22px;
+    margin: 30px 0;
+}
+
+.home-content button {
+    margin-top: 10px;
+}
+
+/* =========================
+   BOUTON
+========================= */
+
+button {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 2px solid white;
+    padding: 18px 50px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+    color: black;
+    transform: scale(1.08);
+}
+
+/* =========================
+   PAGE LE CLUB
+========================= */
+
+.club-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 140px 20px 60px;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
+        url("images/jeu.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* CARTE */
+
+.club-card {
+    width: 90%;
+    max-width: 850px;
+
+    padding: 50px;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+
+    backdrop-filter: blur(10px);
+}
+
+.club-card h1 {
+    font-size: 55px;
+    margin: 0 0 25px;
+}
+
+.club-card h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.club-card p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+/* =========================
+   PAGE RÈGLEMENT
+========================= */
+
+.reglement-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 140px 20px 60px;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
+        url("images/jeu.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reglement-card {
+    width: 90%;
+    max-width: 850px;
+
+    padding: 50px;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+
+    backdrop-filter: blur(10px);
+}
+
+.reglement-card h1 {
+    text-align: center;
+    font-size: 55px;
+    margin: 0 0 40px;
+}
+
+.reglement-card h2 {
+    font-size: 27px;
+    margin-top: 25px;
+}
+
+.reglement-card p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* =========================
+   PAGE DISCORD
+========================= */
+
+.discord-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 140px 20px 60px;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
+        url("images/jeu.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.discord-card {
+    width: 90%;
+    max-width: 850px;
+
+    padding: 60px 40px;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+
+    backdrop-filter: blur(10px);
+}
+
+.discord-card h1 {
+    font-size: 50px;
+    margin: 0 0 30px;
+}
+
+.discord-card p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+/* BOUTON DISCORD */
+
+.discord-button {
+    display: inline-block;
+
+    margin-top: 30px;
+    padding: 18px 40px;
+
+    color: white;
+    background: #5865F2;
+
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    border-radius: 50px;
+
+    transition: 0.3s;
+}
+
+.discord-button:hover {
+    transform: scale(1.08);
+    background: #4752C4;
+}
